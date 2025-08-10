@@ -21,7 +21,7 @@ app.add_middleware(
 )
 
 # تحميل النموذج عند بدء التشغيل
-MODEL_SIZE = "small"  # يمكن تغييرها إلى large-v3 إذا كانت الموارد كافية
+MODEL_SIZE = "base"  # يمكن تغييرها إلى large-v3 إذا كانت الموارد كافية
 model = whisper.load_model(MODEL_SIZE)
 
 # قاموس تحويل الكلمات العامية إلى الفصحى (مع الاحتفاظ بالأصل)
